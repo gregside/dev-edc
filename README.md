@@ -1,24 +1,32 @@
 # dev-edc
 
-My personal developer everyday carry — a toolkit of skills, tools, and config files for AI-accelerated engineering.
+My personal *developer everyday carry* — a toolkit of reusable AI resources for AI-accelerated engineering. Checkout the full toolkit on github: [colinhauch/dev-edc](https://github.com/colinhauch/dev-edc)
 
-Pull only what you need into any project using [degit](https://github.com/Rich-Harris/degit):
+Pull the entire toolkit or only what you need into any project using [degit](https://github.com/Rich-Harris/degit):
 
+Entire repo:
 ```sh
-npx degit colinhauch/dev-edc/skills/{skill-name} .claude/skills/{skill-name}
+npx degit colinhauch/dev-edc
+```
+
+Specific item:
+```sh
+npx degit colinhauch/dev-edc/skills/{name} .claude/skills/{name}
 ```
 
 ---
 
 ## What is this?
 
-`dev-edc` is a public, versioned collection of reusable AI agent skills. Each skill lives in its own folder under `skills/` and can be dropped into any project independently. Skills are formatted for **Claude Code** by default.
+`dev-edc` is a public collection of reusable AI resources — skills, commands, prompts, agents, config, and more. Each item lives in its own folder and can be dropped into any project independently. Items are formatted for **Claude Code** by default.
+
+Some of these are authored by me, some by other individuals, and some published by organizations. I may edit resources published by others; the original author will always be credited (and linked if possible).
 
 ---
 
 ## Getting Started with Claude Code
 
-1. Install a skill into your project:
+1. Install an item into your project:
    ```sh
    npx degit colinhauch/dev-edc/skills/sync-edc .claude/skills/sync-edc
    ```
@@ -29,16 +37,16 @@ npx degit colinhauch/dev-edc/skills/{skill-name} .claude/skills/{skill-name}
 
 ## Using with Other AI Tools
 
-Skills are formatted for Claude Code out of the box. To adapt a skill for **Cursor, Windsurf, Codex CLI, or VS Code Copilot**, pull in the `adapt-to-tool` skill first:
+Items are formatted for Claude Code by default. If you're using **Cursor, Windsurf, Codex CLI, or VS Code Copilot**, fetch the `adapt-to-tool` skill and follow the included quickstart:
 
 ```sh
-npx degit colinhauch/dev-edc/skills/adapt-to-tool .claude/skills/adapt-to-tool
+npx degit colinhauch/dev-edc/skills/adapt-to-tool ./adapt-to-tool
 ```
 
-Then ask your agent to run the `adapt-to-tool` skill and specify your target tool.
+Then open [`adapt-to-tool/QUICKSTART.md`](./skills/adapt-to-tool/QUICKSTART.md) for step-by-step instructions — no Claude Code required.
 
 ---
 
-## Available Skills
+## Available Resources
 
-See [table-of-contents.md](./table-of-contents.md) for the full annotated list.
+See [table-of-contents.md](./table-of-contents.md) for the full annotated list. I recomend 
