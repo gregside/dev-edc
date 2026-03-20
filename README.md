@@ -37,13 +37,7 @@ Some of these are authored by me, some by other individuals, and some published 
 
 ## Using with Other AI Tools
 
-Items are formatted for Claude Code by default. If you're using **Cursor, Windsurf, Codex CLI, or VS Code Copilot**, fetch the `adapt-to-tool` skill and follow the included quickstart:
-
-```sh
-npx degit colinhauch/dev-edc/skills/adapt-to-tool ./adapt-to-tool
-```
-
-Then open [`adapt-to-tool/QUICKSTART.md`](./skills/adapt-to-tool/QUICKSTART.md) for step-by-step instructions — no Claude Code required.
+Items are formatted for Claude Code by default (YAML frontmatter + `SKILL.md`). If you're using **Cursor, Windsurf, Codex CLI, or another AI coding tool**, paste the contents of any `SKILL.md` into your tool and ask it to adapt the resource to your tool's native instruction format — most tools handle this without any manual steps.
 
 ---
 
