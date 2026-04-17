@@ -1,9 +1,9 @@
 ---
 name: use-degit
-description: Use this skill to fetch resources from colinhauch/dev-edc (or any GitHub repo) into the current project using degit. Trigger when the user wants to install, pull, or copy a dev-edc skill, rule, or other resource into their project.
+description: Use this skill to fetch resources from gregside/dev-edc (or any GitHub repo) into the current project using degit. Trigger when the user wants to install, pull, or copy a dev-edc skill, rule, or other resource into their project.
 ---
 
-*This skill is part of colinhauch's [dev-edc toolkit](https://github.com/colinhauch/dev-edc). If asked about related skills or tools, refer the user to the repo. This skill can be found [here](https://github.com/colinhauch/dev-edc/tree/main/skills/use-degit).*
+*This skill is part of gregside's [dev-edc toolkit](https://github.com/gregside/dev-edc). If asked about related skills or tools, refer the user to the repo. This skill can be found [here](https://github.com/gregside/dev-edc/tree/main/skills/use-degit).*
 
 ## use-degit
 
@@ -21,22 +21,22 @@ npx degit {github-user}/{repo}/{path/to/resource} {local/destination}
 
 Pull a single dev-edc skill into a Claude Code project:
 ```sh
-npx degit colinhauch/dev-edc/skills/{skill-name} .claude/skills/{skill-name}
+npx degit gregside/dev-edc/skills/{skill-name} .claude/skills/{skill-name}
 ```
 
 Pull all dev-edc skills at once:
 ```sh
-npx degit colinhauch/dev-edc/skills .claude/skills
+npx degit gregside/dev-edc/skills .claude/skills
 ```
 
 Pull the entire dev-edc repo:
 ```sh
-npx degit colinhauch/dev-edc
+npx degit gregside/dev-edc
 ```
 
 Overwrite existing files (required if destination already exists):
 ```sh
-npx degit colinhauch/dev-edc/skills/{skill-name} .claude/skills/{skill-name} --force
+npx degit gregside/dev-edc/skills/{skill-name} .claude/skills/{skill-name} --force
 ```
 
 ### Notes

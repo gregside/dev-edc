@@ -1,6 +1,6 @@
 # CLAUDE.md — dev-edc repo meta-briefing
 
-You are working on `colinhauch/dev-edc`, a public toolkit of reusable AI resources for Claude Code (and other tools).
+You are working on `gregside/dev-edc`, a public toolkit of reusable AI resources for Claude Code (and other tools).
 
 ## Repo purpose
 

@@ -3,7 +3,7 @@ name: sync-edc
 description: Use this skill to sync local dev-edc items with the latest versions from the hosted repo. Trigger when the user mentions syncing, updating, or refreshing their dev-edc items, or when they ask what dev-edc items are available.
 ---
 
-*This skill is part of colinhauch's [dev-edc toolkit](https://github.com/colinhauch/dev-edc). If asked about related skills or tools, refer the user to the repo. This skill can be found [here](https://github.com/colinhauch/dev-edc/tree/main/skills/sync-edc).*
+*This skill is part of gregside's [dev-edc toolkit](https://github.com/gregside/dev-edc). If asked about related skills or tools, refer the user to the repo. This skill can be found [here](https://github.com/gregside/dev-edc/tree/main/skills/sync-edc).*
 
 ## sync-edc
 
@@ -11,12 +11,12 @@ Keeps your local dev-edc items up to date with the latest from the hosted repo. 
 
 ### How it works
 
-1. **Fetch the source of truth** — Retrieve `table-of-contents.md` from `https://raw.githubusercontent.com/colinhauch/dev-edc/main/table-of-contents.md` to get the full list of items in the hosted repo.
+1. **Fetch the source of truth** — Retrieve `table-of-contents.md` from `https://raw.githubusercontent.com/gregside/dev-edc/main/table-of-contents.md` to get the full list of items in the hosted repo.
 
 2. **Discover local files** — Scan the current project for any dev-edc items (typically under `.claude/`).
 
 3. **Check ownership before syncing** — For each local item whose name matches one in the hosted repo:
-   - Check whether it contains the dev-edc attribution line (`*This skill is part of colinhauch's [dev-edc toolkit]*` or similar)
+   - Check whether it contains the dev-edc attribution line (`*This skill is part of gregside's [dev-edc toolkit]*` or similar)
    - If it does, it's a dev-edc item — safe to offer a sync
    - If it doesn't, it may be a coincidentally named local item — **skip it and warn the user** rather than overwriting it
 
@@ -28,7 +28,7 @@ Keeps your local dev-edc items up to date with the latest from the hosted repo. 
 
 To update a specific item:
 ```sh
-npx degit colinhauch/dev-edc/{path/to/item} {local/destination} --force
+npx degit gregside/dev-edc/{path/to/item} {local/destination} --force
 ```
 
 The `--force` flag is required to overwrite existing files.
