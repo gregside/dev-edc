@@ -3,7 +3,7 @@
 # Run once: bash /path/to/terminal/install.sh
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ZDOTDIR="${SCRIPT_DIR%/terminal}/.config/zsh"
+ZDOTDIR="${SCRIPT_DIR%/scripts}/.config/zsh"
 ZSHENV="$HOME/.zshenv"
 
 if [[ -f "$ZSHENV" ]]; then
