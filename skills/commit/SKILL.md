@@ -20,15 +20,7 @@ Organize into separate commits by type, scope, and relatedness. Keep commits ato
 
 For each logical group:
 1. Stage relevant files with `git add <files>`
-2. Commit using HEREDOC format:
-   ```bash
-   git commit -m "$(cat <<'EOF'
-   type(scope): description
-
-   Optional body explaining what and why.
-   EOF
-   )"
-   ```
+2. Commit using `git commit -m "{type}({scope}): {description}"` keep commit messages brief and use all lowercase with no period at the end. For example: `feat(auth): add login endpoint`
 3. Run `git status` to verify
 
 ### Rules
