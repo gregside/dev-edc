@@ -1,0 +1,16 @@
+# git
+alias gc='git checkout'
+alias gc-='git checkout -'
+alias gp='git pull'
+alias gl='git log --oneline'
+
+# misc
+alias prof='vim $ZDOTDIR/.zshrc'
+alias rsrc='source $ZDOTDIR/.zshrc'
+alias ..='cd ..'
+alias cd..='cd ..'
+alias cls='clear'
+alias weather='curl wttr.in/chicago'
+
+# local
+[ -f $ZDOTDIR/../shell/.aliases.local ] && source $ZDOTDIR/../shell/.aliases.local
