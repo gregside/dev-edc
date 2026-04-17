@@ -1,2 +1,3 @@
-.claude/
-terminal/.aliases.local
+# .claude/
+.config/shell/.aliases.local
+.config/zsh/custom/plugins/
